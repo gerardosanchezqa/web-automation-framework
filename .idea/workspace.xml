@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe881e32-d08c-45d6-8f9b-0e03bc8468d7" name="Default" comment="added day 1 of the project, which consisted in:&#10;- Asserting titles after changing pages&#10;- Sorting products by name&#10;- Verifying that sorting by name worked">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fe881e32-d08c-45d6-8f9b-0e03bc8468d7" name="Default" comment="added day 1 of the project, which consisted in:&#10;- Asserting titles after changing pages&#10;- Sorting products by name&#10;- Verifying that sorting by name worked" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
