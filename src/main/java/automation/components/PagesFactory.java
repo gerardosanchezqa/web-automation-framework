@@ -11,12 +11,12 @@ public class PagesFactory {
         PageFactory.initElements(_webDriver, this);
     }
 
-    public LoginPage loginPage(){
-        return new LoginPage(getWebDriver(), this);
+    public HomePage loginPage(){
+        return new HomePage(getWebDriver(), this);
     }
 
-    public ManagerHomePage managerHomePage(){
-        return new ManagerHomePage(getWebDriver(), this);
+    public MobilePage mobilePage(){
+        return new MobilePage(getWebDriver(), this);
     }
 
     public WebDriver getWebDriver() {

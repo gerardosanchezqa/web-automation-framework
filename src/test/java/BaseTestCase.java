@@ -1,5 +1,5 @@
-import automation.components.LoginPage;
-import automation.components.ManagerHomePage;
+import automation.components.HomePage;
+import automation.components.MobilePage;
 import automation.components.PagesFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,8 +12,8 @@ public class BaseTestCase extends DataProviders{
 
     public WebDriver webDriver;
     public PagesFactory pagesFactory;
-    LoginPage loginPage;
-    ManagerHomePage managerHomePage;
+    HomePage homePage;
+    MobilePage mobilePage;
 
     @BeforeTest
     public void before(){
@@ -22,9 +22,9 @@ public class BaseTestCase extends DataProviders{
         PagesFactory pagesFactory = new PagesFactory(webDriver);
     }
 
-    public LoginPage goToWebsite(String website) {
+    public HomePage goToWebsite(String website) {
         webDriver.get(website);
-        return new LoginPage(webDriver, pagesFactory);
+        return new HomePage(webDriver, pagesFactory);
     }
 
 
