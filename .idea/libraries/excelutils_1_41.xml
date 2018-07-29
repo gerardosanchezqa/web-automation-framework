@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="excelutils-1.41">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/excelutils-1.41.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
