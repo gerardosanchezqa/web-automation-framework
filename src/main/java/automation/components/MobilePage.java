@@ -33,5 +33,4 @@ public class MobilePage extends BasePage{
         }
         return verifyIfListIsSortedAlphabetically(listWithMobileNames);
     }
-
 }
