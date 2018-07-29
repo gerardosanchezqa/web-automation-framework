@@ -1,4 +1,4 @@
-package otherJavaCodeTests;
+package randomJavaCodingExercises;
 
 import java.util.ArrayList;
 

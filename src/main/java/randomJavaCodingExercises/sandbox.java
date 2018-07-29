@@ -1,4 +1,4 @@
-package otherJavaCodeTests;
+package randomJavaCodingExercises;
 
 public class sandbox {
 
