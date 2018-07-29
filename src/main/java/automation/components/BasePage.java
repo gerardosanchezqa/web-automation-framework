@@ -1,7 +1,10 @@
 package automation.components;
 
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.util.concurrent.TimeUnit;
 
 public class BasePage extends PagesFactory{
 
@@ -26,6 +29,28 @@ public class BasePage extends PagesFactory{
     public LoginPage goToWebsite(String desiredWebsite){
         _webDriver.get(desiredWebsite);
         return new LoginPage(getWebDriver(), _pagesFactory);
+    }
+
+    public String getCurrentAlertText(){
+            try
+            {
+                _webDriver.switchTo().alert();
+                return _webDriver.switchTo().alert().getText();
+            }
+            catch (NoAlertPresentException Ex)
+            {
+                return "No alert thrown";
+            }
+    }
+
+    public void closeCurrentAlert(){
+        try
+        {
+            _webDriver.switchTo().alert().accept();
+        }
+        catch (NoAlertPresentException Ex)
+        {
+        }
     }
 
     public String getPageTitle(){
