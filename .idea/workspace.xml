@@ -65,8 +65,8 @@
       <file leaf-file-name="MobilePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="69" />
+            <state relative-caret-position="612">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#898#906#0" expanded="true" />
@@ -487,11 +487,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50317967" side_tool="true" visible="true" weight="0.33540374" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50158983" side_tool="true" visible="true" weight="0.33540374" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5816406" weight="0.32951945" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49880764" weight="0.33540374" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49682036" visible="true" weight="0.33540374" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49841017" visible="true" weight="0.33540374" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49682036" weight="0.33540374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25437203" />
@@ -835,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="69" />
+        <state relative-caret-position="612">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#898#906#0" expanded="true" />
