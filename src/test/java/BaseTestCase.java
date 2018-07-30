@@ -1,4 +1,5 @@
 import automation.components.HomePage;
+import automation.components.MobileDetailsPage;
 import automation.components.MobilePage;
 import automation.components.PagesFactory;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ public class BaseTestCase extends DataProviders{
     public PagesFactory pagesFactory;
     HomePage homePage;
     MobilePage mobilePage;
+    MobileDetailsPage mobileDetailsPage;
 
     @BeforeTest
     public void before(){

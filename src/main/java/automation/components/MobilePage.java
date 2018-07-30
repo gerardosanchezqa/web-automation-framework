@@ -33,4 +33,23 @@ public class MobilePage extends BasePage{
         }
         return verifyIfListIsSortedAlphabetically(listWithMobileNames);
     }
+
+    public String getMobilePriceFromName(String mobileName) {
+        for (WebElement element : displayedItems){
+            if(element.findElement(By.cssSelector(".product-name")).getText().equals(mobileName)){
+                return element.findElement(By.cssSelector(".price")).getText();
+            }
+        }
+        return "No mobile with that name was found";
+    }
+
+    public MobileDetailsPage goToMobileDetails(String mobileName) {
+        for (WebElement element : displayedItems){
+            if(element.findElement(By.cssSelector(".product-name")).getText().equals(mobileName)){
+                clickElement(element.findElement(By.cssSelector(".product-name")));
+                return new MobileDetailsPage(getWebDriver(), this);
+            }
+        }
+        return new MobileDetailsPage(getWebDriver(), this);
+    }
 }

@@ -3,13 +3,25 @@ import org.testng.annotations.Test;
 
 public class VerifyMobileFunctionality extends BaseTestCase{
 
+    String websiteToVisit = "http://live.guru99.com/index.php/";
+
     @Test(priority = 0)
     public void VerifyMobileSortingByName() {
-        homePage = goToWebsite("http://live.guru99.com/index.php/");
+        homePage = goToWebsite(websiteToVisit);
         Assert.assertEquals(homePage.getPageTitle(), "Home page");
         mobilePage = homePage.clickMobileLink();
         Assert.assertEquals(mobilePage.getPageTitle(), "Mobile");
         mobilePage.sortMobilesBy("Name");
         Assert.assertTrue(mobilePage.verifyIfMobileSortedByName());
+    }
+
+    @Test(priority = 1)
+    public void verifyThatMobilePricesAreMatching() {
+        String mobileDeviceToTest = "SONY XPERIA";
+        homePage = goToWebsite(websiteToVisit);
+        mobilePage = homePage.clickMobileLink();
+        String initialMobilePrice = mobilePage.getMobilePriceFromName(mobileDeviceToTest);
+        mobileDetailsPage = mobilePage.goToMobileDetails(mobileDeviceToTest);
+        Assert.assertEquals(mobileDetailsPage.getMobilePrice(), initialMobilePrice);
     }
 }
