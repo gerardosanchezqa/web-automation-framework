@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe881e32-d08c-45d6-8f9b-0e03bc8468d7" name="Default" comment="added day 1 of the project, which consisted in:&#10;- Asserting titles after changing pages&#10;- Sorting products by name&#10;- Verifying that sorting by name worked">
-      <change afterPath="$PROJECT_DIR$/src/main/java/automation/components/MobileDetailsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumproject2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java" afterDir="false" />
+    <list default="true" id="fe881e32-d08c-45d6-8f9b-0e03bc8468d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/automation/components/MobilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/automation/components/MobilePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/automation/components/PagesFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/automation/components/PagesFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/VerifyMobileFunctionality.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/VerifyMobileFunctionality.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="VerifyMobileFunctionality.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+            <state relative-caret-position="210">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -436,8 +433,8 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="TestNG.BankManagerLoginTest.unsuccessfulLogin" />
       <item itemvalue="TestNG.VerifyMobileFunctionality" />
-      <item itemvalue="TestNG.VerifyMobileFunctionality.unsuccessfulLogin" />
       <item itemvalue="TestNG.VerifyMobileFunctionality.VerifyMobileSortingByName" />
       <item itemvalue="TestNG.VerifyMobileFunctionality.verifyThatMobilePricesAreMatching" />
       <item itemvalue="TestNG.VerifyMobileFunctionality.verifyThatMobilePricesAreMatching (1)" />
@@ -504,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532840876821</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added day 2 script to compare prices between list page and details page">
+      <created>1532978702753</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1532978702753</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -551,7 +555,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41906282" side_tool="true" visible="true" weight="0.3286004" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.58093715" visible="true" weight="0.3286004" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58093715" weight="0.3286004" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978701" weight="0.3346856" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49682036" weight="0.33540374" />
       <window_info id="Capture Tool" order="2" />
@@ -615,7 +619,8 @@
     <MESSAGE value="new repository" />
     <MESSAGE value="added days 1, 2 and 3 of Guru99 Selenium test project https://www.guru99.com/live-selenium-project.html&#10;&#10;implemented Excel files reading for parameterized data from TestNG" />
     <MESSAGE value="added day 1 of the project, which consisted in:&#10;- Asserting titles after changing pages&#10;- Sorting products by name&#10;- Verifying that sorting by name worked" />
-    <option name="LAST_COMMIT_MESSAGE" value="added day 1 of the project, which consisted in:&#10;- Asserting titles after changing pages&#10;- Sorting products by name&#10;- Verifying that sorting by name worked" />
+    <MESSAGE value="added day 2 script to compare prices between list page and details page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added day 2 script to compare prices between list page and details page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -892,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+        <state relative-caret-position="210">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
