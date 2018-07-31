@@ -1,7 +1,4 @@
-import automation.components.HomePage;
-import automation.components.MobileDetailsPage;
-import automation.components.MobilePage;
-import automation.components.PagesFactory;
+import automation.components.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -16,6 +13,7 @@ public class BaseTestCase extends DataProviders{
     HomePage homePage;
     MobilePage mobilePage;
     MobileDetailsPage mobileDetailsPage;
+    ShoppingCartPage shoppingCartPage;
 
     @BeforeTest
     public void before(){

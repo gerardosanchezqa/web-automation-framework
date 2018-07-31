@@ -1,5 +1,5 @@
 import org.testng.Assert;
-import org.testng.annotations.Test;
+        import org.testng.annotations.Test;
 
 public class VerifyMobileFunctionality extends BaseTestCase{
 
@@ -23,5 +23,18 @@ public class VerifyMobileFunctionality extends BaseTestCase{
         String initialMobilePrice = mobilePage.getMobilePriceFromName(mobileDeviceToTest);
         mobileDetailsPage = mobilePage.goToMobileDetails(mobileDeviceToTest);
         Assert.assertEquals(mobileDetailsPage.getMobilePrice(), initialMobilePrice);
+    }
+
+    @Test(priority = 2)
+    public void verifyAddingAnInvalidAmountOfAProduct() {
+        String mobileDeviceToTest = "SONY XPERIA";
+        homePage = goToWebsite(websiteToVisit);
+        mobilePage = homePage.clickMobileLink();
+        shoppingCartPage = mobilePage.addMobileToCart(mobileDeviceToTest);
+        shoppingCartPage.updateQuantityAndUpdate("1000");
+        Assert.assertEquals(shoppingCartPage.getProductQuantity(), "1000");
+        Assert.assertEquals(shoppingCartPage.getErrorMessageText(), "Some of the products cannot be ordered in requested quantity.");
+        shoppingCartPage.clickEmptyCartLink();
+        Assert.assertTrue(shoppingCartPage.isShoppingCartEmpty());
     }
 }

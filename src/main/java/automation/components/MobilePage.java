@@ -52,4 +52,14 @@ public class MobilePage extends BasePage{
         }
         return new MobileDetailsPage(getWebDriver(), this);
     }
+
+    public ShoppingCartPage addMobileToCart(String mobileName) {
+        for (WebElement element : displayedItems){
+            if(element.findElement(By.cssSelector(".product-name")).getText().equals(mobileName)){
+                clickElement(element.findElement(By.cssSelector(".btn-cart")));
+                return new ShoppingCartPage(getWebDriver(), this);
+            }
+        }
+        return new ShoppingCartPage(getWebDriver(), this);
+    }
 }
