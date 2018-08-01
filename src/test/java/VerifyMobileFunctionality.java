@@ -37,4 +37,22 @@ public class VerifyMobileFunctionality extends BaseTestCase{
         shoppingCartPage.clickEmptyCartLink();
         Assert.assertTrue(shoppingCartPage.isShoppingCartEmpty());
     }
+
+    @Test(priority = 3)
+    public void verifyCompareProducts() {
+        String mobileDeviceToTest1 = "SONY XPERIA", mobileDeviceToTest2 = "IPHONE";
+        homePage = goToWebsite(websiteToVisit);
+        mobilePage = homePage.clickMobileLink();
+        mobilePage.clickAddToCompare(mobileDeviceToTest1);
+        mobilePage.clickAddToCompare(mobileDeviceToTest2);
+        Assert.assertTrue(mobilePage.isCompareBlockDisplayed());
+        Assert.assertTrue(mobilePage.isMobileDisplayedInCompareBlock(mobileDeviceToTest1));
+        Assert.assertTrue(mobilePage.isMobileDisplayedInCompareBlock(mobileDeviceToTest2));
+        productComparationPage = mobilePage.clickCompareButton();
+        Assert.assertEquals(productComparationPage.getComparePageTitle(), "COMPARE PRODUCTS");
+        Assert.assertTrue(productComparationPage.isMobileDisplayedInComparePage(mobileDeviceToTest1));
+        Assert.assertTrue(productComparationPage.isMobileDisplayedInComparePage(mobileDeviceToTest2));
+        mobilePage = productComparationPage.closeComparationPage();
+        Assert.assertEquals(mobilePage.getPageTitle(), "Mobile");
+    }
 }

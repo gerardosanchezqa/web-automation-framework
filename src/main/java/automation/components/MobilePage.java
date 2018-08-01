@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class MobilePage extends BasePage{
 
@@ -17,8 +18,20 @@ public class MobilePage extends BasePage{
     WebElement mobileSortByDropdown;
 
     @FindBy(css=".products-grid .item")
-    @CacheLookup
     List<WebElement> displayedItems;
+
+    @FindBy(css=".block-compare .block-title")
+    @CacheLookup
+    WebElement compareBlockTitle;
+
+    @FindBy(id="compare-items")
+    @CacheLookup
+    WebElement compareBlockItems;
+
+    @FindBy(css=".block-list button")
+    @CacheLookup
+    WebElement compareButton;
+
 
     public MobilePage(WebDriver webDriver, PagesFactory pagesFactory){ super(webDriver, pagesFactory);}
 
@@ -61,5 +74,27 @@ public class MobilePage extends BasePage{
             }
         }
         return new ShoppingCartPage(getWebDriver(), this);
+    }
+
+    public void clickAddToCompare(String mobileName) {
+        for (WebElement element : displayedItems){
+            if(element.findElement(By.cssSelector(".product-name")).getText().equals(mobileName)){
+                clickElement(element.findElement(By.cssSelector(".link-compare")));
+                break;
+            }
+        }
+    }
+
+    public boolean isCompareBlockDisplayed() {
+        return compareBlockTitle.isDisplayed();
+    }
+
+    public boolean isMobileDisplayedInCompareBlock(String mobileName) {
+        return compareBlockItems.findElement(By.linkText(mobileName)).isDisplayed();
+    }
+
+    public ProductComparationPage clickCompareButton() {
+        clickElement(compareButton);
+        return new ProductComparationPage(getWebDriver(), this);
     }
 }

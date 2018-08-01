@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe881e32-d08c-45d6-8f9b-0e03bc8468d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/automation/components/ShoppingCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/automation/components/ProductComparationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java" afterDir="false" />
@@ -20,23 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VerifyMobileFunctionality.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VerifyMobileFunctionality.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="701">
+              <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DropdownTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/randomSeleniumSandboxExercises/DropdownTest.java">
+      <file leaf-file-name="RemoteWebElement.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/2.39.0/selenium-remote-driver-2.39.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="281">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
+              <folding>
+                <element signature="e#5192#5193#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,8 +44,17 @@
       <file leaf-file-name="BaseTestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataProviders.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DataProviders.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -53,7 +62,7 @@
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="102">
               <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
@@ -62,12 +71,8 @@
       <file leaf-file-name="PagesFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -75,31 +80,36 @@
       <file leaf-file-name="MobilePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+            <state relative-caret-position="510">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#897#905#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2846#2847#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingCartPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/ShoppingCartPage.java">
+      <file leaf-file-name="SuiteRunnerWorker.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/SuiteRunnerWorker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="284">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductComparationPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/ProductComparationPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,7 +118,7 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="510">
               <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
             </state>
           </provider>
@@ -153,14 +163,15 @@
         <option value="$PROJECT_DIR$/src/test/java/VerifyMobileSortingByName.java" />
         <option value="$PROJECT_DIR$/src/test/java/randomSeleniumSandboxExercises/DropdownTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/automation/components/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/automation/components/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/MobileDetailsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/automation/components/MobileDetailsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/automation/components/ShoppingCartPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/automation/components/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/automation/components/MobileDetailsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/automation/components/ShoppingCartPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/automation/components/ProductComparationPage.java" />
       </list>
     </option>
   </component>
@@ -171,10 +182,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1083" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1273" />
+    <option name="width" value="1294" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -233,8 +244,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,16 +255,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gera\IdeaProjects\automationsandbox\src" />
+      <recent name="C:\Users\Gera\IdeaProjects\automationsandbox\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="automation.components" />
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Gera\IdeaProjects\automationsandbox\src" />
-      <recent name="C:\Users\Gera\IdeaProjects\automationsandbox\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct">
+  <component name="RunManager" selected="TestNG.VerifyMobileFunctionality">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -288,61 +299,16 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="VerifyMobileFunctionality.VerifyMobileSortingByName" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VerifyMobileFunctionality" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumproject2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VerifyMobileFunctionality" />
-      <option name="METHOD_NAME" value="VerifyMobileSortingByName" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="VerifyMobileFunctionality.unsuccessfulLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VerifyMobileFunctionality" />
-      <option name="METHOD_NAME" value="unsuccessfulLogin" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumproject2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VerifyMobileFunctionality" />
-      <option name="METHOD_NAME" value="verifyAddingAnInvalidAmountOfAProduct" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -379,14 +345,60 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VerifyMobileFunctionality.verifyThatMobilePricesAreMatching (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VerifyMobileFunctionality.verifyCompareProducts (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumproject2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VerifyMobileFunctionality" />
-      <option name="METHOD_NAME" value="verifyThatMobilePricesAreMatching" />
+      <option name="METHOD_NAME" value="verifyCompareProducts" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="VerifyMobileFunctionality.verifyCompareProducts (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumproject2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VerifyMobileFunctionality" />
+      <option name="METHOD_NAME" value="verifyCompareProducts" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="VerifyMobileFunctionality.verifyCompareProducts" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumproject2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VerifyMobileFunctionality" />
+      <option name="METHOD_NAME" value="verifyCompareProducts" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -448,19 +460,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.VerifyMobileFunctionality.VerifyMobileSortingByName" />
-      <item itemvalue="TestNG.VerifyMobileFunctionality.verifyThatMobilePricesAreMatching" />
-      <item itemvalue="TestNG.VerifyMobileFunctionality.verifyThatMobilePricesAreMatching (1)" />
       <item itemvalue="TestNG.VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" />
-      <item itemvalue="TestNG.VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct (1)" />
+      <item itemvalue="TestNG.VerifyMobileFunctionality.verifyCompareProducts" />
+      <item itemvalue="TestNG.VerifyMobileFunctionality.verifyCompareProducts (1)" />
+      <item itemvalue="TestNG.VerifyMobileFunctionality.verifyCompareProducts (2)" />
+      <item itemvalue="TestNG.VerifyMobileFunctionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.VerifyMobileFunctionality" />
+        <item itemvalue="TestNG.VerifyMobileFunctionality.verifyCompareProducts" />
+        <item itemvalue="TestNG.VerifyMobileFunctionality.verifyCompareProducts (2)" />
+        <item itemvalue="TestNG.VerifyMobileFunctionality.verifyCompareProducts (1)" />
         <item itemvalue="TestNG.VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" />
-        <item itemvalue="TestNG.VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct (1)" />
-        <item itemvalue="TestNG.VerifyMobileFunctionality.verifyThatMobilePricesAreMatching (1)" />
-        <item itemvalue="TestNG.VerifyMobileFunctionality.verifyThatMobilePricesAreMatching" />
-        <item itemvalue="TestNG.VerifyMobileFunctionality.VerifyMobileSortingByName" />
       </list>
     </recent_temporary>
   </component>
@@ -535,67 +547,95 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VerifyMobileFunctionality_VerifyMobileSortingByName - 2018.07.28 at 21h 48m 10s.xml">
-      <configuration name="VerifyMobileFunctionality.VerifyMobileSortingByName" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 40m 29s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyThatMobilePricesAreMatching - 2018.07.30 at 12h 07m 56s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyThatMobilePricesAreMatching" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 41m 17s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyThatMobilePricesAreMatching_(1) - 2018.07.30 at 12h 08m 08s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyThatMobilePricesAreMatching (1)" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 41m 38s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct - 2018.07.31 at 13h 13m 21s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 41m 51s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct - 2018.07.31 at 13h 23m 15s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts_(2) - 2018.07.31 at 22h 42m 59s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct - 2018.07.31 at 13h 23m 23s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 45m 37s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct_(1) - 2018.07.31 at 13h 23m 32s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct (1)" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 46m 11s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct - 2018.07.31 at 13h 25m 05s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 46m 29s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct - 2018.07.31 at 13h 25m 26s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 48m 05s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VerifyMobileFunctionality_verifyAddingAnInvalidAmountOfAProduct - 2018.07.31 at 13h 25m 34s.xml">
-      <configuration name="VerifyMobileFunctionality.verifyAddingAnInvalidAmountOfAProduct" configurationId="TestNG" />
+    <history-entry file="VerifyMobileFunctionality_verifyCompareProducts - 2018.07.31 at 22h 48m 36s.xml">
+      <configuration name="VerifyMobileFunctionality.verifyCompareProducts" configurationId="TestNG" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1083" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960256" weight="0.32996893" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49765626" weight="0.32951945" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4201278" side_tool="true" visible="true" weight="0.3286004" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4244833" side_tool="true" visible="true" weight="0.32608697" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978701" weight="0.3346856" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5798722" visible="true" weight="0.3286004" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49682036" weight="0.33540374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5755167" visible="true" weight="0.32608697" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49675852" weight="0.336982" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4964229" weight="0.33540374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2625133" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11844197" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49960938" weight="0.32951945" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49483308" weight="0.3998447" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893504" weight="0.3995943" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2625133" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978701" weight="0.3346856" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5798722" visible="true" weight="0.3286004" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893504" weight="0.3995943" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4201278" side_tool="true" visible="true" weight="0.3286004" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49960938" weight="0.32951945" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49682036" weight="0.33540374" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -647,24 +687,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/randomSeleniumSandboxExercises/CheckboxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/2.39.0/selenium-chrome-driver-2.39.0.jar!/org/openqa/selenium/chrome/ChromeDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -759,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/15.0/guava-15.0.jar!/com/google/common/base/Preconditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -812,25 +831,11 @@
     <entry file="file://$USER_HOME$/Downloads/Day02/Day02/src/Util.java" />
     <entry file="file://$USER_HOME$/Downloads/Day02/Day02/src/TestScript02.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Guru99BankManagerLoginTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/DataProviders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/ManagerHomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/randomSeleniumSandboxExercises/DropdownTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="272">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -845,27 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/TestCase1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/TestCase1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="102">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
@@ -876,24 +864,6 @@
           <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#897#905#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -916,19 +886,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/TestCase2.java">
+    <entry file="file://$USER_HOME$/Downloads/TestCase2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/PagesFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+        <state relative-caret-position="340">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataProviders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/2.39.0/selenium-remote-driver-2.39.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="e#5192#5193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/MobilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#897#905#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2846#2847#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/VerifyMobileFunctionality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="701">
+          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/automation/components/ProductComparationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
           </folding>
         </state>
       </provider>

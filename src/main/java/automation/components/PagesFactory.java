@@ -27,6 +27,10 @@ public class PagesFactory {
         return new ShoppingCartPage(getWebDriver(), this);
     }
 
+    public ProductComparationPage productComparationPage(){
+        return new ProductComparationPage(getWebDriver(), this);
+    }
+
     public WebDriver getWebDriver() {
         return _webDriver;
     }

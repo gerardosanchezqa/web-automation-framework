@@ -14,6 +14,7 @@ public class BaseTestCase extends DataProviders{
     MobilePage mobilePage;
     MobileDetailsPage mobileDetailsPage;
     ShoppingCartPage shoppingCartPage;
+    ProductComparationPage productComparationPage;
 
     @BeforeTest
     public void before(){

@@ -73,4 +73,10 @@ public class BasePage extends PagesFactory{
     public String getPageTitle(){
         return _webDriver.getTitle();
     }
+
+    protected void switchToCurrentWindow() {
+        for (String currentWindow: getWebDriver().getWindowHandles()) {
+            getWebDriver().switchTo().window(currentWindow);
+        }
+    }
 }
