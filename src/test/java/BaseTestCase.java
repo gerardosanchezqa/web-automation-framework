@@ -20,14 +20,13 @@ public class BaseTestCase extends DataProviders{
     public void before(){
         webDriver = new ChromeDriver();
         webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        PagesFactory pagesFactory = new PagesFactory(webDriver);
+        pagesFactory = new PagesFactory(webDriver);
     }
 
     public HomePage goToWebsite(String website) {
         webDriver.get(website);
         return new HomePage(webDriver, pagesFactory);
     }
-
 
     @AfterTest
     public void after() {

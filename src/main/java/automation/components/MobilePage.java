@@ -14,26 +14,27 @@ import java.util.concurrent.TimeUnit;
 public class MobilePage extends BasePage{
 
     @FindBy(css=".sort-by select")
-    @CacheLookup
     WebElement mobileSortByDropdown;
 
     @FindBy(css=".products-grid .item")
     List<WebElement> displayedItems;
 
     @FindBy(css=".block-compare .block-title")
-    @CacheLookup
     WebElement compareBlockTitle;
 
     @FindBy(id="compare-items")
-    @CacheLookup
     WebElement compareBlockItems;
 
     @FindBy(css=".block-list button")
-    @CacheLookup
     WebElement compareButton;
 
 
     public MobilePage(WebDriver webDriver, PagesFactory pagesFactory){ super(webDriver, pagesFactory);}
+
+    @Override
+    protected BooleanCondition readyCondition() {
+        return Conditions.elementPresent(mobileSortByDropdown);
+    }
 
     public void sortMobilesBy(String optionToSelect) {
         selectElementFromDropdown(mobileSortByDropdown, optionToSelect);
@@ -60,20 +61,20 @@ public class MobilePage extends BasePage{
         for (WebElement element : displayedItems){
             if(element.findElement(By.cssSelector(".product-name")).getText().equals(mobileName)){
                 clickElement(element.findElement(By.cssSelector(".product-name")));
-                return new MobileDetailsPage(getWebDriver(), this);
+                return withPage().mobileDetailsPage();
             }
         }
-        return new MobileDetailsPage(getWebDriver(), this);
+        return withPage().mobileDetailsPage();
     }
 
     public ShoppingCartPage addMobileToCart(String mobileName) {
         for (WebElement element : displayedItems){
             if(element.findElement(By.cssSelector(".product-name")).getText().equals(mobileName)){
                 clickElement(element.findElement(By.cssSelector(".btn-cart")));
-                return new ShoppingCartPage(getWebDriver(), this);
+                return withPage().shoppingCartPage();
             }
         }
-        return new ShoppingCartPage(getWebDriver(), this);
+        return withPage().shoppingCartPage();
     }
 
     public void clickAddToCompare(String mobileName) {
@@ -95,6 +96,6 @@ public class MobilePage extends BasePage{
 
     public ProductComparationPage clickCompareButton() {
         clickElement(compareButton);
-        return new ProductComparationPage(getWebDriver(), this);
+        return withPage().productComparationPage();
     }
 }

@@ -1,22 +1,101 @@
 package automation.components;
 
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.sun.istack.internal.Nullable;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
-public class BasePage extends PagesFactory{
+public abstract class BasePage extends PagesFactory{
 
-    private final PagesFactory _pagesFactory;
-    private final WebDriver _webDriver;
+    private PagesFactory _pagesFactory;
+    private WebDriver _webDriver;
+    protected WebDriverWait _wait;
 
-    public BasePage(WebDriver _webDriver, PagesFactory pagesFactory){
-        super(_webDriver);
-        this._webDriver = getWebDriver();
+    public BasePage(WebDriver webDriver, PagesFactory pagesFactory){
+        this(webDriver, pagesFactory, 5);
+    }
+
+    private static final BooleanCondition IS_DOCUMENT_READY = new BooleanCondition() {
+        @Override
+        public String describeFailure(){
+            return "Document is not ready";
+        }
+
+        @Nullable
+        @Override
+        public Boolean apply(@Nullable WebDriver input){
+            return "complete".equals(((JavascriptExecutor) input).executeScript("return document.readyState;"));
+        }
+    };
+
+    protected BasePage(WebDriver webDriver, PagesFactory pagesFactory, int readyConditionWait) {
+        super(webDriver);
+        this._webDriver = webDriver;
         this._pagesFactory = pagesFactory;
+        this._wait = new WebDriverWait(webDriver, readyConditionWait);
+        if(readyConditionWait > 0) {
+            waitFor(IS_DOCUMENT_READY, "Waiting for page to be ready failed", readyConditionWait);
+        } else {
+            waitFor(IS_DOCUMENT_READY, "Waiting for page to be ready failed");
+        }
+        waitFor(readyCondition(), "Initialization failed", 5);
+    }
+
+    protected void waitFor(BooleanCondition condition, String contextDescription) {
+        waitFor(condition, contextDescription, 20);
+    }
+
+
+    protected void waitFor(BooleanCondition condition, String contextDescription, int timeOutInSeconds) {
+        waitFor(condition, contextDescription, timeOutInSeconds, WebDriverWait.DEFAULT_SLEEP_TIMEOUT);
+    }
+
+    protected void waitFor(BooleanCondition condition, String contextDescription, int timeOutInSeconds, long sleepDurationInMillis) {
+        try {
+            maybeDisableImplicitWait(condition);
+            boolean waitComplete = false;
+            long startTime = System.currentTimeMillis();
+            while (!waitComplete) {
+                try {
+                    waitComplete = new WebDriverWait(_webDriver, timeOutInSeconds, sleepDurationInMillis).until(condition);
+                } catch (TimeoutException e) {
+                    throw e;
+                } catch (WebDriverException e) {
+                    // The web driver may throw an exception if we tried to evaluate something between page loads. So
+                    // catch the exception and try again.
+                    if (System.currentTimeMillis() - startTime > timeOutInSeconds * 1000) {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            maybeEnableImplicitWait(condition);
+        }
+    }
+
+    private void maybeEnableImplicitWait(BooleanCondition condition) {
+        if (!condition.shouldImplicitlyWait()) {
+            implicitlyWait(10);
+        }
+    }
+
+    private void maybeDisableImplicitWait(BooleanCondition condition) {
+        if (!condition.shouldImplicitlyWait()) {
+            implicitlyWait(0);
+        }
+    }
+
+    private void implicitlyWait(int durationInSeconds) {
+        _webDriver.manage().timeouts().implicitlyWait(durationInSeconds, TimeUnit.SECONDS);
+    }
+
+    public void waitForElementToShow(WebElement webElement){
+        _wait.until(ExpectedConditions.visibilityOf(webElement));
     }
 
     public void clearFieldAndSendKeys(WebElement webElement, String text){
@@ -79,4 +158,10 @@ public class BasePage extends PagesFactory{
             getWebDriver().switchTo().window(currentWindow);
         }
     }
+
+    public PagesFactory withPage() {
+        return _pagesFactory;
+    }
+
+    protected abstract BooleanCondition readyCondition();
 }

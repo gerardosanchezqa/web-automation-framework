@@ -19,8 +19,8 @@ public class PagesFactory {
         return new MobilePage(getWebDriver(), this);
     }
 
-    public MobilePage mobileDetailsPage(){
-        return new MobilePage(getWebDriver(), this);
+    public MobileDetailsPage mobileDetailsPage(){
+        return new MobileDetailsPage(getWebDriver(), this);
     }
 
     public ShoppingCartPage shoppingCartPage(){

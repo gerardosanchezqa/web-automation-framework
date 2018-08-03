@@ -16,22 +16,24 @@ public class ShoppingCartPage extends BasePage{
     WebElement mobileUpdateQuantityInput;
 
     @FindBy(css=".product-cart-actions .btn-update")
-    @CacheLookup
     WebElement  mobileUpdateQuantityButton;
 
     @FindBy(css=".error-msg")
-    @CacheLookup
     WebElement errorMessage;
 
     @FindBy(css=".btn-empty")
-    @CacheLookup
     WebElement emptyCartLink;
 
     @FindBy(css=".cart-empty")
-    @CacheLookup
     WebElement cartEmptyIndicator;
 
     public ShoppingCartPage(WebDriver webDriver, PagesFactory pagesFactory){ super(webDriver, pagesFactory);}
+
+    @Override
+    protected BooleanCondition readyCondition() {
+        return Conditions.elementPresent(mobileUpdateQuantityInput);
+    }
+
 
     public void updateQuantityAndUpdate(String quantity){
         clearFieldAndSendKeys(mobileUpdateQuantityInput, quantity);

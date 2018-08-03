@@ -11,17 +11,18 @@ import java.util.List;
 public class ProductComparationPage extends BasePage{
 
     @FindBy(css = ".page-title h1")
-    @CacheLookup
     WebElement pageTitle;
 
     @FindBy(css = ".product-shop-row.top")
-    @CacheLookup
     WebElement displayedItems;
-
-
 
     public ProductComparationPage(WebDriver webDriver, PagesFactory pagesFactory){
         super(webDriver, pagesFactory);
+    }
+
+    @Override
+    protected BooleanCondition readyCondition() {
+        return Conditions.elementPresent(pageTitle);
     }
 
     public String getComparePageTitle(){
