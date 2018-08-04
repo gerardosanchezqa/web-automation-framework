@@ -11,7 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomePage extends BasePage {
 
     @FindBy(css = ".nav-1")
-    WebElement mobileLink;
+    WebElement mobileTabLink;
+
+    @FindBy(linkText = "MY ACCOUNT")
+    WebElement myAccountLink;
 
     public HomePage(WebDriver webDriver, PagesFactory pagesFactory) {
         super(webDriver, pagesFactory);
@@ -19,12 +22,16 @@ public class HomePage extends BasePage {
 
     @Override
     protected BooleanCondition readyCondition() {
-        return Conditions.elementPresent(mobileLink);
+        return Conditions.elementPresent(mobileTabLink);
     }
 
     public MobilePage clickMobileLink() {
-        waitForElementToShow(mobileLink);
-        clickElement(mobileLink);
+        clickElement(mobileTabLink);
         return withPage().mobilePage();
+    }
+
+    public LoginPage clickMyAccountLink() {
+        clickElement(myAccountLink);
+        return withPage().loginPage();
     }
 }

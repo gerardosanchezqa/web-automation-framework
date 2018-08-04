@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class DataProviders {
 
-    String excelFileLocation = "C:\\Users\\Gera\\Desktop\\LoginTestData.xlsx";
+    String excelFileLocation = "C:\\Users\\Gera\\Desktop\\TestData.xlsx";
 
     @DataProvider(name="loginDataProvider")
     public Object[][] loginDataProvider(){
@@ -37,6 +37,11 @@ public class DataProviders {
     @DataProvider(name="InvalidLoginDataFromExcel")
     public Object[][] InvalidLoginDataFromExcel() throws IOException, InvalidFormatException {
         return readExcelFile(excelFileLocation, "InvalidLoginData");
+    }
+
+    @DataProvider(name="ValidRegistrationData")
+    public Object[][] ValidRegistrationData() throws IOException, InvalidFormatException {
+        return readExcelFile(excelFileLocation, "ValidRegistrationData");
     }
 
     public Object[][] readExcelFile(String fileLocation, String sheetName) throws IOException, InvalidFormatException {

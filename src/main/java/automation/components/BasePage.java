@@ -107,6 +107,10 @@ public abstract class BasePage extends PagesFactory{
         webElement.click();
     }
 
+    public String getText(WebElement webElement){
+        return webElement.getText();
+    }
+
     public void selectElementFromDropdown(WebElement webElement, String optionToSelect){
         Select selectedDropdown = new Select(webElement);
         selectedDropdown.selectByVisibleText(optionToSelect);

@@ -12,9 +12,15 @@ public class BaseTestCase extends DataProviders{
     public PagesFactory pagesFactory;
     HomePage homePage;
     MobilePage mobilePage;
+    LoginPage loginPage;
+    CreateAccountPage createAccountPage;
     MobileDetailsPage mobileDetailsPage;
     ShoppingCartPage shoppingCartPage;
     ProductComparationPage productComparationPage;
+    MyAccountPage myAccountPage;
+    MyWishlistPage myWishlistPage;
+    WishlistSharingPage wishlistSharingPage;
+    TvPage tvPage;
 
     @BeforeTest
     public void before(){

@@ -11,7 +11,7 @@ public class PagesFactory {
         PageFactory.initElements(_webDriver, this);
     }
 
-    public HomePage loginPage(){
+    public HomePage homePage(){
         return new HomePage(getWebDriver(), this);
     }
 
@@ -33,5 +33,29 @@ public class PagesFactory {
 
     public WebDriver getWebDriver() {
         return _webDriver;
+    }
+
+    protected LoginPage loginPage() {
+        return new LoginPage(getWebDriver(), this);
+    }
+
+    protected CreateAccountPage createAccountPage() {
+        return new CreateAccountPage(getWebDriver(), this);
+    }
+
+    protected MyAccountPage myAccountPage() {
+        return new MyAccountPage(getWebDriver(), this);
+    }
+
+    protected MyWishlistPage myWislistPage() {
+        return new MyWishlistPage(getWebDriver(), this);
+    }
+
+    protected WishlistSharingPage wishlistSharingPage() {
+        return new WishlistSharingPage(getWebDriver(), this);
+    }
+
+    protected TvPage tvPage() {
+        return new TvPage(getWebDriver(), this);
     }
 }

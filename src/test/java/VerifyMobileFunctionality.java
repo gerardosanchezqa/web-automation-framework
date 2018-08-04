@@ -1,5 +1,5 @@
 import org.testng.Assert;
-        import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class VerifyMobileFunctionality extends BaseTestCase{
 
@@ -54,5 +54,19 @@ public class VerifyMobileFunctionality extends BaseTestCase{
         Assert.assertTrue(productComparationPage.isMobileDisplayedInComparePage(mobileDeviceToTest2));
         mobilePage = productComparationPage.closeComparationPage();
         Assert.assertEquals(mobilePage.getPageTitle(), "Mobile");
+    }
+
+    @Test(priority = 4, dataProvider = "ValidRegistrationData")
+    public void verifyCreateAccountAndShareWishlist(String firstname, String middlename, String lastname, String email, String password, String repeatedPassword) {
+        String tvToUse = "LG LCD";
+        homePage = goToWebsite(websiteToVisit);
+        loginPage = homePage.clickMyAccountLink();
+        createAccountPage = loginPage.clickCreateAccountbutton();
+        myAccountPage = createAccountPage.fillFormAndSubmit(firstname, middlename, lastname, email, password, repeatedPassword);
+        tvPage = myAccountPage.clickTvTabLink();
+        myWishlistPage = tvPage.addTvToWishlist(tvToUse);
+        wishlistSharingPage = myWishlistPage.clickShareWishlistButton();
+        myWishlistPage = wishlistSharingPage.addEmailAddresses(email).addMessage("Sharing my wishlist with you!").shareWishlist();
+        Assert.assertEquals(myWishlistPage.getSuccessMessageText(), "Your Wishlist has been shared.");
     }
 }
