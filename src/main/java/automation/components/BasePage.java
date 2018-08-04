@@ -2,6 +2,7 @@ package automation.components;
 
 import com.sun.istack.internal.Nullable;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -11,6 +12,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public abstract class BasePage extends PagesFactory{
+
+    @FindBy(className = "skip-account")
+    WebElement accountMenu;
+
+    @FindBy(css = ".skip-content .links .last")
+    WebElement logoutLink;
 
     private PagesFactory _pagesFactory;
     private WebDriver _webDriver;
@@ -153,6 +160,11 @@ public abstract class BasePage extends PagesFactory{
         }
     }
 
+    public static int parseStringToInt(String s){
+        s = s.replace("$","");
+        return Double.valueOf(s).intValue();
+    }
+
     public String getPageTitle(){
         return _webDriver.getTitle();
     }
@@ -168,4 +180,10 @@ public abstract class BasePage extends PagesFactory{
     }
 
     protected abstract BooleanCondition readyCondition();
+
+    public HomePage logout(){
+        clickElement(accountMenu);
+        clickElement(logoutLink);
+        return withPage().homePage();
+    }
 }

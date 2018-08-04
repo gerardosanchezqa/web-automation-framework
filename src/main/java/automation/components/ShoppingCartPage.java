@@ -1,14 +1,8 @@
 package automation.components;
 
-import org.apache.xerces.xs.StringList;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ShoppingCartPage extends BasePage{
 
@@ -26,6 +20,9 @@ public class ShoppingCartPage extends BasePage{
 
     @FindBy(css=".cart-empty")
     WebElement cartEmptyIndicator;
+
+    @FindBy(css=".method-checkout-cart-methods-onepage-bottom button")
+    WebElement proceedToCheckoutButton;
 
     public ShoppingCartPage(WebDriver webDriver, PagesFactory pagesFactory){ super(webDriver, pagesFactory);}
 
@@ -56,4 +53,8 @@ public class ShoppingCartPage extends BasePage{
         return cartEmptyIndicator.isDisplayed();
     }
 
+    public CheckoutPage clickProceedToCheckoutButton(){
+        clickElement(proceedToCheckoutButton);
+        return withPage().checkoutPage();
+    }
 }

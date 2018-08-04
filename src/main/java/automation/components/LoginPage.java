@@ -10,8 +10,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends BasePage {
 
-    @FindBy(linkText = "CREATE AN ACCOUNT")
+    @FindBy(css = ".new-users a")
     WebElement createAccountButton;
+
+    @FindBy(id = "email")
+    WebElement loginEmailField;
+
+    @FindBy(id = "pass")
+    WebElement loginPasswordField;
+
+    @FindBy(id = "send2")
+    WebElement loginButton;
 
     public LoginPage(WebDriver webDriver, PagesFactory pagesFactory) {
         super(webDriver, pagesFactory);
@@ -25,5 +34,24 @@ public class LoginPage extends BasePage {
     public CreateAccountPage clickCreateAccountbutton() {
         clickElement(createAccountButton);
         return withPage().createAccountPage();
+    }
+
+    public MyAccountPage loginWith(String email, String password) {
+        addEmail(email);
+        addPassword(password);
+        clickLoginButton();
+        return withPage().myAccountPage();
+    }
+
+    public void addEmail(String email){
+        clearFieldAndSendKeys(loginEmailField, email);
+    }
+
+    public void addPassword(String password){
+        clearFieldAndSendKeys(loginPasswordField, password);
+    }
+
+    public void clickLoginButton(){
+        clickElement(loginButton);
     }
 }

@@ -21,6 +21,7 @@ public class BaseTestCase extends DataProviders{
     MyWishlistPage myWishlistPage;
     WishlistSharingPage wishlistSharingPage;
     TvPage tvPage;
+    CheckoutPage checkoutPage;
 
     @BeforeTest
     public void before(){

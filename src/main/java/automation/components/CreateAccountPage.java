@@ -44,7 +44,7 @@ public class CreateAccountPage extends BasePage {
         clearFieldAndSendKeys(firstNameField, firstname);
         clearFieldAndSendKeys(middleNameField, middlename);
         clearFieldAndSendKeys(lastNameField, lastname);
-        clearFieldAndSendKeys(emailAddressField, ((int)(Math.random()*12345))+email);
+        clearFieldAndSendKeys(emailAddressField, email);
         clearFieldAndSendKeys(passwordField, password);
         clearFieldAndSendKeys(passwordConfirmationField, repeatedPassword);
         clickElement(registerAccountButton);

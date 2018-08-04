@@ -32,4 +32,9 @@ public class MyAccountPage extends BasePage {
         return withPage().tvPage();
     }
 
+    public MyWishlistPage clickMyWishlistLink(){
+        clickElement(myWishListLink);
+        return withPage().myWislistPage();
+    }
+
 }

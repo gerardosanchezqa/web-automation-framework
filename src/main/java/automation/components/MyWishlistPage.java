@@ -15,6 +15,10 @@ public class MyWishlistPage extends BasePage {
     @FindBy(className= "success-msg")
     WebElement myWishlistsuccessMessage;
 
+
+    @FindBy(className= "btn-cart")
+    WebElement addToCartButton;
+
     public MyWishlistPage(WebDriver webDriver, PagesFactory pagesFactory) {
         super(webDriver, pagesFactory);
     }
@@ -33,4 +37,8 @@ public class MyWishlistPage extends BasePage {
         return getText(myWishlistsuccessMessage);
     }
 
+    public ShoppingCartPage clickAddToCartButton(){
+        clickElement(addToCartButton);
+        return withPage().shoppingCartPage();
+    }
 }

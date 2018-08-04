@@ -58,4 +58,8 @@ public class PagesFactory {
     protected TvPage tvPage() {
         return new TvPage(getWebDriver(), this);
     }
+
+    protected CheckoutPage checkoutPage() {
+        return new CheckoutPage(getWebDriver(), this);
+    }
 }

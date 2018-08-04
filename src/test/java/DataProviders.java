@@ -44,6 +44,11 @@ public class DataProviders {
         return readExcelFile(excelFileLocation, "ValidRegistrationData");
     }
 
+    @DataProvider(name="ShippingInformation")
+    public Object[][] ShippingInformation() throws IOException, InvalidFormatException {
+        return readExcelFile(excelFileLocation, "ShippingInformation");
+    }
+
     public Object[][] readExcelFile(String fileLocation, String sheetName) throws IOException, InvalidFormatException {
         Workbook wb = WorkbookFactory.create(new File(fileLocation));
         Sheet worksheet;

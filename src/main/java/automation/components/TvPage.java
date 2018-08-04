@@ -42,4 +42,12 @@ public class TvPage extends BasePage {
         return withPage().myWislistPage();
     }
 
-}
+    public int getTvPrice(String tvName) {
+        for (WebElement element : displayedTvs){
+            if(element.findElement(By.cssSelector(".product-name")).getText().equals(tvName)){
+                return parseStringToInt(element.findElement(By.cssSelector(".special-price")).getText());
+            }
+        }
+        return 0;
+    }
+    }
