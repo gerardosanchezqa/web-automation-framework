@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class VerifyMobileFunctionality extends BaseTestCase{
+public class VerifyMobileFunctionality extends BaseTestCase {
 
     String websiteToVisit = "http://live.guru99.com/index.php/";
 
@@ -64,7 +64,7 @@ public class VerifyMobileFunctionality extends BaseTestCase{
     @Test(priority = 4, dataProvider = "ValidRegistrationData", groups = "WishlistAndPurchase")
     public void verifyCreateAccountAndShareWishlist(String firstname, String middlename, String lastname, String email, String password, String repeatedPassword) {
         String tvToUse = "LG LCD";
-        randomlyGeneratedEmail = ((int)(Math.random()*12345))+email;
+        randomlyGeneratedEmail = ((int) (Math.random() * 12345)) + email;
         passwordForTherandomlyGeneratedEmail = password;
         homePage = goToWebsite(websiteToVisit);
         loginPage = homePage.clickMyAccountLink();
@@ -91,13 +91,13 @@ public class VerifyMobileFunctionality extends BaseTestCase{
         shoppingCartPage = myWishlistPage.clickAddToCartButton();
         checkoutPage = shoppingCartPage.clickProceedToCheckoutButton();
         checkoutPage.addShippingInformation(country, state, zipcode, address, city, telephone).clickShippingInformationContinueButton();
-            shippingPrice = checkoutPage.getShippingPrice();
+        shippingPrice = checkoutPage.getShippingPrice();
         checkoutPage.clickShippingMethodContinueButton();
         checkoutPage.selectCheckAndMoneyRadioButton();
         checkoutPage.clickPaymentInformationContinueButton();
-        Assert.assertEquals(checkoutPage.getTotal(), tvPrice+shippingPrice);
+        Assert.assertEquals(checkoutPage.getTotal(), tvPrice + shippingPrice);
         checkoutPage.clickPlaceOrderButton();
         orderNumber = checkoutPage.getOrderNumber();
-        System.out.println("Final order number: "+ orderNumber);
+        System.out.println("Final order number: " + orderNumber);
     }
 }
