@@ -1,12 +1,12 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class VerifyMobileFunctionality extends BaseTestCase {
+public class VerifyMobileFunctionalityTest extends BaseTestCase {
 
     String websiteToVisit = "http://live.guru99.com/index.php/";
 
     @Test(priority = 0)
-    public void VerifyMobileSortingByName() {
+    public void verifyMobileSortingByName() {
         homePage = goToWebsite(websiteToVisit);
         Assert.assertEquals(homePage.getPageTitle(), "Home page");
         mobilePage = homePage.clickMobileLink();

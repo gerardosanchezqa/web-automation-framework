@@ -1,9 +1,7 @@
 package automation.components;
 
-import com.sun.istack.internal.Nullable;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,9 +31,8 @@ public abstract class BasePage extends PagesFactory{
             return "Document is not ready";
         }
 
-        @Nullable
         @Override
-        public Boolean apply(@Nullable WebDriver input){
+        public Boolean apply(WebDriver input){
             return "complete".equals(((JavascriptExecutor) input).executeScript("return document.readyState;"));
         }
     };
