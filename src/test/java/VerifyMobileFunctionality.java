@@ -5,7 +5,6 @@ public class VerifyMobileFunctionality extends BaseTestCase {
 
     String websiteToVisit = "http://live.guru99.com/index.php/";
 
-
     @Test(priority = 0)
     public void VerifyMobileSortingByName() {
         homePage = goToWebsite(websiteToVisit);
