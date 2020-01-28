@@ -1,4 +1,4 @@
-# seleniumproject2
+# Web automation framework
 
 Project started from live Selenium testing project.
 
